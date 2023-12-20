@@ -17,7 +17,7 @@ struct ContentView: View {
     @StateObject private var timer = TimeCounter() //с ссылочными типами используем StateObject
     //state с классом бесполезен - ссылка не меняется
     @EnvironmentObject private var user: UserSettings
-    
+
     var body: some View {
         VStack {
             Text("Hi, \(user.name)")
@@ -28,6 +28,23 @@ struct ContentView: View {
                 .padding(.top, 100)
             Spacer()
             ButtonView(timer: timer)
+            Button(action: {
+                user.isLoggedIn.toggle()
+            }){
+                Text("Log out")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+                
+            }
+            .frame(width: 200, height: 60)
+            .background(Color.blue)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 2.0)
+            )
+            
         }
         .padding()
     }

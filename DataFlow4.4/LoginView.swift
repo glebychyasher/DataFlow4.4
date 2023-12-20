@@ -11,6 +11,10 @@ struct LoginView: View {
     @EnvironmentObject private var user: UserSettings //общие объекты для разных зон приложения
     @State private var name = ""
     
+    
+    @AppStorage("userName") var userName = ""
+    @AppStorage("isLoggedIn") var isLoggedIn = false
+    
     var body: some View {
         HStack {
             Text("\(name.count)")
@@ -30,10 +34,10 @@ struct LoginView: View {
 
 extension LoginView {
     private func login() {
-        if !name.isEmpty {
-            user.name = name
-            user.isLoggedIn.toggle()
-        }
+        user.name = name
+        userName = name
+        isLoggedIn = true
+        user.isLoggedIn.toggle()
     }
 }
 
