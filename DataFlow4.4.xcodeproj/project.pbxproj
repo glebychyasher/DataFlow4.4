@@ -13,9 +13,10 @@
 		FB5F6AAC2B30B94800767895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5F6AAB2B30B94800767895 /* Preview Assets.xcassets */; };
 		FB5F6AB42B30BD2A00767895 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6AB32B30BD2A00767895 /* ButtonView.swift */; };
 		FB5F6AB62B30BF1400767895 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6AB52B30BF1400767895 /* TimeCounter.swift */; };
-		FB5F6AB82B30C64900767895 /* LOGINVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6AB72B30C64900767895 /* LOGINVIEW.swift */; };
+		FB5F6AB82B30C64900767895 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6AB72B30C64900767895 /* LoginView.swift */; };
 		FB5F6ABA2B30C75C00767895 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6AB92B30C75C00767895 /* UserSettings.swift */; };
 		FB5F6ABC2B30C87400767895 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6ABB2B30C87400767895 /* RootView.swift */; };
+		FB5F6ABE2B338C6800767895 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F6ABD2B338C6800767895 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		FB5F6AAD2B30B94800767895 /* DataFlow4_4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataFlow4_4.entitlements; sourceTree = "<group>"; };
 		FB5F6AB32B30BD2A00767895 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FB5F6AB52B30BF1400767895 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
-		FB5F6AB72B30C64900767895 /* LOGINVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOGINVIEW.swift; sourceTree = "<group>"; };
+		FB5F6AB72B30C64900767895 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FB5F6AB92B30C75C00767895 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		FB5F6ABB2B30C87400767895 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FB5F6ABD2B338C6800767895 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +71,10 @@
 				FB5F6AAA2B30B94800767895 /* Preview Content */,
 				FB5F6AB32B30BD2A00767895 /* ButtonView.swift */,
 				FB5F6AB52B30BF1400767895 /* TimeCounter.swift */,
-				FB5F6AB72B30C64900767895 /* LOGINVIEW.swift */,
+				FB5F6AB72B30C64900767895 /* LoginView.swift */,
 				FB5F6AB92B30C75C00767895 /* UserSettings.swift */,
 				FB5F6ABB2B30C87400767895 /* RootView.swift */,
+				FB5F6ABD2B338C6800767895 /* Data.swift */,
 			);
 			path = DataFlow4.4;
 			sourceTree = "<group>";
@@ -159,8 +162,9 @@
 				FB5F6AA52B30B94600767895 /* DataFlow4_4App.swift in Sources */,
 				FB5F6AB42B30BD2A00767895 /* ButtonView.swift in Sources */,
 				FB5F6ABC2B30C87400767895 /* RootView.swift in Sources */,
-				FB5F6AB82B30C64900767895 /* LOGINVIEW.swift in Sources */,
+				FB5F6AB82B30C64900767895 /* LoginView.swift in Sources */,
 				FB5F6AB62B30BF1400767895 /* TimeCounter.swift in Sources */,
+				FB5F6ABE2B338C6800767895 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

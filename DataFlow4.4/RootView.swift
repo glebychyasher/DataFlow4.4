@@ -14,7 +14,7 @@ struct RootView: View {
             if userSettings.isLoggedIn {
                 ContentView()
             } else {
-                LOGINVIEW()
+                LoginView()
             }
         }
         .environmentObject(userSettings) //временное окружение
