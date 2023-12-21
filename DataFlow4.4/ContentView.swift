@@ -25,8 +25,8 @@ struct ContentView: View {
             Text(timer.counter.formatted())
                 .font(.largeTitle)
                 .padding(.top, 100)
-            Spacer()
             ButtonView(timer: timer)
+            Spacer()
             Button(action: {
                 user.isLoggedIn.toggle()
                 UserDefaults.standard.set(user.isLoggedIn, forKey: "isLoggedIn")
