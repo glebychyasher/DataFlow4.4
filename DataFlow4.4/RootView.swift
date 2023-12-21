@@ -11,7 +11,7 @@ struct RootView: View {
     @StateObject private var userSettings = UserSettings()
     var body: some View {
         Group {
-            if userSettings.isLoggedIn {
+            if userSettings.isLoggedIn || (UserDefaults.standard.object(forKey: "userName") != nil && UserDefaults.standard.object(forKey: "isLoggedIn") as? Bool == true)  {
                 ContentView()
             } else {
                 LoginView()

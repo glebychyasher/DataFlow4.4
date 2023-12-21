@@ -13,14 +13,13 @@ struct ContentView: View {
     //1. Меняется интерфейс
     //2. Единственный первоисточник (не влияют внешние воздействия), поэтому приватный
     //3. Инициализация нужна
-    
     @StateObject private var timer = TimeCounter() //с ссылочными типами используем StateObject
     //state с классом бесполезен - ссылка не меняется
     @EnvironmentObject private var user: UserSettings
 
     var body: some View {
         VStack {
-            Text("Hi, \(user.name)")
+            Text("Hi, \(UserDefaults.standard.string(forKey: "userName") ?? "")")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Text(timer.counter.formatted())
@@ -30,6 +29,7 @@ struct ContentView: View {
             ButtonView(timer: timer)
             Button(action: {
                 user.isLoggedIn.toggle()
+                UserDefaults.standard.set(user.isLoggedIn, forKey: "isLoggedIn")
             }){
                 Text("Log out")
                     .font(.title)

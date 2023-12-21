@@ -21,7 +21,6 @@ struct ButtonView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundStyle(.white)
-            
         }
         .frame(width: 200, height: 60)
         .background(Color.red)

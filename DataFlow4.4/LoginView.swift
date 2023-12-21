@@ -35,9 +35,11 @@ struct LoginView: View {
 extension LoginView {
     private func login() {
         user.name = name
+        UserDefaults.standard.set(user.name, forKey: "userName")
         userName = name
         isLoggedIn = true
         user.isLoggedIn.toggle()
+        UserDefaults.standard.set(user.isLoggedIn, forKey: "isLoggedIn")
     }
 }
 
